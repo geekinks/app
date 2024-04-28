@@ -16,7 +16,7 @@ const config = {
   url: 'https://geekink.com.ng',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/app/',
+  baseUrl: '/',
       // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
