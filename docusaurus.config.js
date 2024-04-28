@@ -17,6 +17,7 @@ const config = {
   baseUrl: '/',
   organizationName: 'geekinks',
   projectName: 'app', 
+  trailingSlash: false,
 
 
       // Please change this to your repo.
