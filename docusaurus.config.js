@@ -9,7 +9,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Geek ink',
-  tagline: 'Technopreneurship School for Geeks',
+  tagline: "we're more than just a school—we're your ultimate destination for all things tech. From top-notch education to a wide range of tech services, we're here to support you every step of the way on your journey to success.",
   favicon: 'img/favicon/favicon.ico',
 
   // Set the production url of your site here
@@ -102,24 +102,77 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: '',
         logo: {
-          alt: 'Logo',
+          alt: 'Geek ink',
           src: 'img/logo.png',
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            // type: 'docSidebar',
+            type: 'dropdown',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Courses',
+            items: [
+              {
+                type: 'doc',
+                label: 'General Computing Basic',
+                docId: 'basic/intro',
+              },
+              {
+                type: 'doc',
+                label: 'Advance Excel',
+                docId: 'excel/intro',
+              },
+              {
+                type: 'doc',
+                label: 'Python programming',
+                docId: 'python/intro',
+              },
+              // {
+              //   type: 'doc',
+              //   label: 'Mern Stack',
+              //   docId: 'mern/intro',
+              // },
+              // {
+              //   type: 'doc',
+              //   label: 'NodeJS',
+              //   docId: 'node/intro',
+              // },
+              // {
+              //   type: 'doc',
+              //   label: 'ReactJS',
+              //   docId: 'react/intro',
+              // },
+              // {
+              //   type: 'doc',
+              //   label: 'Java programming',
+              //   docId: 'java/intro',
+              // },
+            ],
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/geekinks',
-            label: 'GitHub',
-            position: 'right',
-          },
+            to: '/blog',
+             label: 'Blog',
+             position: 'left'
+            
+            },
+            // {
+            //   to: '/services',
+            //    label: 'Services',
+            //    position: 'left'
+              
+            // },
+            // {
+            //   to: '/services',
+            //    label: 'Contact Us',
+            //    position: 'right'
+              
+            // },
+          // {
+          //   href: 'https://github.com/AdamsGeeky',
+          //   label: 'GitHub',
+          //   position: 'right',
+          // },
         ],
       },
       footer: {
