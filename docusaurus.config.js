@@ -14,7 +14,7 @@ const config = {
 
   // Set the production url of your site here
   url: 'https://geekink.com.ng',
-  baseUrl: '/app/',
+  baseUrl: '/',
   organizationName: 'geekinks',
   projectName: 'app', 
   trailingSlash: false,
