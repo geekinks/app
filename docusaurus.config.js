@@ -101,6 +101,35 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
+    // Declare some <meta> tags SEO
+    metadata: [
+      {name: 'keywords', content: 'Geek ink, Technoprenuer, LinkedInuted, Social Innovators, GSU'},
+      {name: 'twitter:card', content: 'summary_large_image'},
+    ],
+    headTags: [
+      // Declare a <link> preconnect tag
+      {
+        tagName: 'link',
+        attributes: {
+          rel: 'preconnect',
+          href: 'https://github.com',
+        },
+      },
+      // Declare some json-ld structured data
+      {
+        tagName: 'script',
+        attributes: {
+          type: 'application/ld+json',
+        },
+        innerHTML: JSON.stringify({
+          '@context': 'https://schema.org/',
+          '@type': 'Organization',
+          name: 'Geek ink',
+          url: 'https://web.facebook.com/geeksadacamy',
+          logo: 'https://geekink.com.ng/img/logo.png',
+        }),
+      },
+    ],
       navbar: {
         logo: {
           alt: 'Geek ink',

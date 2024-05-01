@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/Hero';
+import Hero from '@site/src/components/Hero';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
@@ -29,14 +29,14 @@ function HomepageHeader() {
 }
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
+  // const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title="Home"
+      description="Technoprenurship Empowering Tech Heroes, One Skill at a Time! <head />">
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        <Hero />
       </main>
     </Layout>
   );
