@@ -154,29 +154,29 @@ const config = {
               },
               {
                 type: 'doc',
-                label: 'Python programming',
+                label: 'Python programming(OOPs & DSA)',
                 docId: 'python/intro',
               },
-              // {
-              //   type: 'doc',
-              //   label: 'Mern Stack',
-              //   docId: 'mern/intro',
-              // },
-              // {
-              //   type: 'doc',
-              //   label: 'NodeJS',
-              //   docId: 'node/intro',
-              // },
-              // {
-              //   type: 'doc',
-              //   label: 'ReactJS',
-              //   docId: 'react/intro',
-              // },
-              // {
-              //   type: 'doc',
-              //   label: 'Java programming',
-              //   docId: 'java/intro',
-              // },
+              {
+                type: 'doc',
+                label: 'Java programming(SE, OOPs & DSA)',
+                docId: 'python/intro',
+              },
+              {
+                type: 'doc',
+                label: 'Fullstack(MERN)',
+                docId: 'mern/intro',
+              },
+              {
+                type: 'doc',
+                label: 'Frontend(ReactJS)',
+                docId: 'react/intro',
+              },
+              {
+                type: 'doc',
+                label: 'Backend(NodeJS)',
+                docId: 'node/intro',
+              }
             ],
           },
           {
