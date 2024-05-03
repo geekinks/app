@@ -33,6 +33,39 @@ const config = {
     locales: ['en'],
   },
   //  plugins 
+  presets: [
+    [
+      'classic',
+      /** @type {import('@docusaurus/preset-classic').Options} */
+      ({
+        // analytics
+        gtag: {
+          trackingID: 'G-1MBRGBYCHX',
+          anonymizeIP: true,
+        },
+        // sitemap
+        sitemap: {
+          lastmod: 'date',
+          changefreq: 'weekly',
+          priority: 0.5,
+          ignorePatterns: ['/tags/**'],
+          filename: 'sitemap.xml',
+        },
+        docs: {
+          id: 'paths',
+          path: './paths',
+          routeBasePath: 'paths',
+          sidebarPath: './sidebars.js',
+        },
+        blog: {
+          showReadingTime: true,
+        },
+        theme: {
+          customCss: './src/css/custom.css',
+        },
+      }),
+    ],
+  ],
   plugins: [
     [
       '@docusaurus/plugin-pwa',
@@ -62,40 +95,14 @@ const config = {
         ],
       },
     ],
+    ['@docusaurus/plugin-content-docs', {
+      id: 'programming',
+      path: './programming',
+      routeBasePath: 'programming',
+      sidebarPath: './sidebarsProgramming.js'
+    }
   ],
-
-  presets: [
-    [
-      'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
-        // analytics
-        gtag: {
-          trackingID: 'G-1MBRGBYCHX',
-          anonymizeIP: true,
-        },
-        // sitemap
-        sitemap: {
-          lastmod: 'date',
-          changefreq: 'weekly',
-          priority: 0.5,
-          ignorePatterns: ['/tags/**'],
-          filename: 'sitemap.xml',
-        },
-        docs: {
-          sidebarPath: './sidebars.js',
-
-        },
-        blog: {
-          showReadingTime: true,
-        },
-        theme: {
-          customCss: './src/css/custom.css',
-        },
-      }),
-    ],
   ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -130,80 +137,25 @@ const config = {
         }),
       },
     ],
+
+      // navbar
       navbar: {
         logo: {
           alt: 'Geek ink',
           src: 'img/logo.png',
         },
         items: [
-          {
-            // type: 'docSidebar',
-            type: 'dropdown',
-            position: 'left',
-            label: 'Courses',
-            items: [
-              {
-                type: 'doc',
-                label: 'General Computing Basic',
-                docId: 'basic/intro',
-              },
-              {
-                type: 'doc',
-                label: 'Advance Excel',
-                docId: 'excel/intro',
-              },
-              {
-                type: 'doc',
-                label: 'Python programming(OOPs & DSA)',
-                docId: 'python/intro',
-              },
-              {
-                type: 'doc',
-                label: 'Java programming(SE, OOPs & DSA)',
-                docId: 'python/intro',
-              },
-              {
-                type: 'doc',
-                label: 'Fullstack(MERN)',
-                docId: 'mern/intro',
-              },
-              {
-                type: 'doc',
-                label: 'Frontend(ReactJS)',
-                docId: 'react/intro',
-              },
-              {
-                type: 'doc',
-                label: 'Backend(NodeJS)',
-                docId: 'node/intro',
-              }
-            ],
+          {  
+            type: 'docsVersionDropdown',
+            docsPluginId: 'paths',
           },
-          {
-            to: '/blog',
-             label: 'Blog',
-             position: 'left'
-            
-            },
-            // {
-            //   to: '/services',
-            //    label: 'Services',
-            //    position: 'left'
-              
-            // },
-            // {
-            //   to: '/services',
-            //    label: 'Contact Us',
-            //    position: 'right'
-              
-            // },
-          // {
-          //   href: 'https://github.com/AdamsGeeky',
-          //   label: 'GitHub',
-          //   position: 'right',
-          // },
+          {  
+            type: 'docsVersionDropdown',
+            docsPluginId: 'programming',
+          },
         ],
       },
+      // nav end
       footer: {
         style: 'dark',
         links: [
