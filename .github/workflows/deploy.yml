@@ -9,7 +9,7 @@ on:
 
 jobs:
   build:
-    name: Build Docusaurus
+    name: app Build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -31,7 +31,7 @@ jobs:
           path: build
 
   deploy:
-    name: Deploy to GitHub Pages
+    name: Deploy app to production
     needs: build
 
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
@@ -46,6 +46,6 @@ jobs:
 
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy to GitHub Pages
+      - name: Deploy to production server
         id: deployment
         uses: actions/deploy-pages@v4
