@@ -54,7 +54,7 @@ const config = {
         docs: {
           id: 'paths',
           path: './paths',
-          routeBasePath: 'paths',
+          routeBasePath: './paths',
           sidebarPath: './sidebars.js',
         },
         blog: {
@@ -98,8 +98,8 @@ const config = {
     ['@docusaurus/plugin-content-docs', {
       id: 'programming',
       path: './programming',
-      routeBasePath: 'programming',
-      sidebarPath: './sidebarsProgramming.js'
+      routeBasePath: './programming',
+      sidebarPath: './sidebars.js'
     }
   ],
   ],
