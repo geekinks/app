@@ -52,9 +52,9 @@ const config = {
           filename: 'sitemap.xml',
         },
         docs: {
-          id: 'paths',
-          path: './paths',
-          routeBasePath: './paths',
+
+          path: 'docs/paths',
+          routeBasePath: 'paths',
           sidebarPath: './sidebars.js',
         },
         blog: {
@@ -97,9 +97,9 @@ const config = {
     ],
     ['@docusaurus/plugin-content-docs', {
       id: 'programming',
-      path: './programming',
-      routeBasePath: './programming',
-      sidebarPath: './sidebars.js'
+      path: 'docs/programming',
+      routeBasePath: 'programming',
+      sidebarPath: './sidebarsProgramming.js',
     }
   ],
   ],
@@ -144,16 +144,7 @@ const config = {
           alt: 'Geek ink',
           src: 'img/logo.png',
         },
-        items: [
-          {  
-            type: 'docsVersionDropdown',
-            docsPluginId: 'paths',
-          },
-          {  
-            type: 'docsVersionDropdown',
-            docsPluginId: 'programming',
-          },
-        ],
+       
       },
       // nav end
       footer: {
@@ -164,7 +155,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/paths/intro',
+                to: 'docs/paths/intro',
               },
             ],
           },
