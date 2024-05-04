@@ -2,46 +2,43 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# GeekInk Courses: 
 
-Let's discover **Docusaurus in less than 5 minutes**.
+>Launch Your Tech Career Today!
 
-## Getting Started
+We understand the unique challenges faced by aspiring tech professionals in Northern Nigeria, including **limited access to reliable power and internet** connectivity.
 
-Get started by **creating a new site**.
+That's why GeekInk offers not only comprehensive online courses but also a fully equipped lab where you can learn and practice your skills without interruption.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+## Our Courses
 
-### What you'll need
+- **Programming Fundamentals:**
+  - Python Programming
+  - JavaScript Programming
+  - Java Programming
+  - Object-Oriented Programming (OOP) & Data Structures & Algorithms (DSA)
+- **Career Path Specializations:**
+  - Frontend Development (ReactJS)
+  - Backend Development (Django, Node.js, Spring Boot)
+  - Fullstack Development (MERN, Java + React, Django + React)
+  - DevOps
+  - MLOps
+- **Essential Skills:**
+  - Computer Basics (Microsoft Word, Excel, PowerPoint)
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+## GeekInk Lab: Your Powerhouse for Learning
 
-## Generate a new site
+- **Reliable Power Supply**: Learn and practice without worrying about power outages.
+- **High-Speed Internet Connectivity**: Enjoy uninterrupted access to online resources and collaborative tools.
+- **Modern Equipment**: Utilize state-of-the-art computers and software to enhance your learning experience.
+- **Collaborative Environment**: Connect with fellow learners, work on projects together, and build a supportive community.
 
-Generate a new Docusaurus site using the **classic template**.
+## Why Choose GeekInk?
 
-The classic template will automatically be added to your project after you run the command:
+- **Expert Instructors**: Learn from industry professionals who are passionate about sharing their knowledge.
+- **Interactive Learning**: Engage in hands-on exercises, projects, and coding challenges.
+- **Supportive Community**: Connect with fellow learners and build your professional network.
+- **Career Guidance**: Receive personalized support to help you achieve your career goals.
+- **Solutions for Local Challenges**: Focus on your learning without worrying about power or internet issues.
 
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+Enroll in a GeekInk course today and unlock your tech potential in a supportive and empowering environment! Start your journey with GeekInk and become a part of the thriving tech community in Northern Nigeria.

@@ -1,16 +1,13 @@
 Available document ids are:
-- basic/intro
-- django/intro
-- excel/intro
+- basics/intro
+- career/manage-docs-versions
+- career/translate-your-site
 - intro
-- mern/intro
-- node/intro
-- react/intro
-- spring/intro
+- programming/congratulations
+- programming/create-a-blog-post
+- programming/create-a-document
+- programming/create-a-page
+- programming/deploy-your-site
+- programming/markdown-features
 
 
-
-Available document ids are:
-- intro
-- java/intro
-- python/intro
