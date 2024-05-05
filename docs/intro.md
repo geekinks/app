@@ -10,6 +10,10 @@ We understand the unique challenges faced by aspiring tech professionals in Nort
 
 That's why GeekInk offers not only comprehensive online courses but also a fully equipped lab where you can learn and practice your skills without interruption.
 
+<!-- $$
+I = \int_0^{2\pi} \sin(x)\,dx
+$$ -->
+
 ## Our Courses
 
 - **Programming Fundamentals:**
