@@ -3,9 +3,14 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-
+import Mentors from '../components/Mentors';
+import Partners from '../components/Partners';
+import Testimonials from '../components/Testimonials';
+import Services from '../components/Services';
+import CustomDivider from '../components/CustomDivider';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
+
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -39,6 +44,15 @@ export default function Home() {
       <HomepageHeader />
       <main>
         <HomepageFeatures />
+        <CustomDivider
+        label="Our Mentors" />
+        <Services />
+        <CustomDivider
+        label="Testimonials" />
+        <Testimonials />
+        <CustomDivider
+        label="Our Partners" />
+        <Partners />
       </main>
     </Layout>
   );
