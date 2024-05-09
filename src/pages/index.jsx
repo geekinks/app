@@ -45,10 +45,10 @@ export default function Home() {
       <main>
         <HomepageFeatures />
         <CustomDivider
-        label="Our Mentors" />
-        <Services />
+        label="Meet Our Exceptional Mentors" />
+        <Mentors />
         <CustomDivider
-        label="Testimonials" />
+        label="Testimonials from Our Students" />
         <Testimonials />
         <CustomDivider
         label="Our Partners" />
