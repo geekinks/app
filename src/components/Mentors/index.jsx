@@ -1,7 +1,6 @@
-
 import { Box, Card, Container, Grid, Typography, Avatar } 
  from '@mui/material';
-
+ import { VerifiedUser, School, Business } from '@mui/icons-material'; // Import Material Icons
 import mentorImage from '@site/static/img/hero.png';
 
 export default function Mentor() {
@@ -17,11 +16,11 @@ export default function Mentor() {
             Our mentors aren't just tech experts—they're industry leaders, innovators, and passionate advocates for open source collaboration. With years of experience and a deep commitment to empowering the next generation of tech heroes, they're the driving force behind our mission to revolutionize tech education in the northern region of Nigeria.
             <br />
             <br />
-            <strong>Expertise:</strong> Our mentors bring a wealth of knowledge and expertise to the table, spanning a wide range of tech fields and disciplines.
+            <strong > <VerifiedUser />Expertise:</strong> Our mentors bring a wealth of knowledge and expertise to the table, spanning a wide range of tech fields and disciplines.
             <br />
-            <strong>Dedication:</strong> They are deeply committed to guiding and supporting students, offering personalized mentorship and hands-on assistance.
+            <strong> <School />Dedication:</strong> They are deeply committed to guiding and supporting students, offering personalized mentorship and hands-on assistance.
             <br />
-            <strong>Impact:</strong> Through their leadership and advocacy, our mentors are making a tangible impact on the world of technology, shaping the future of open source and inspiring the next generation of tech leaders.
+            <strong> <Business />Impact:</strong> Through their leadership and advocacy, our mentors are making a tangible impact on the world of technology, shaping the future of open source and inspiring the next generation of tech leaders.
           </Typography>
         </Grid>
         <Grid
@@ -47,11 +46,11 @@ export default function Mentor() {
                 backgroundSize: 'contain'
               }}
             />
-            <Avatar
+           <Avatar
               alt="Mentor Image"
               src={mentorImage}
               style={{ width: '100%', height: '100%' }}
-            />
+            /> 
           </Card>
         </Grid>
       </Grid>

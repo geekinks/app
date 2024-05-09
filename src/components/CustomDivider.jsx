@@ -11,7 +11,7 @@ function CustomDivider({ label }) {
           backgroundColor: '#E2F9F9',
           color: 'green',
           border: 'none',
-          fontSize: '2.5rem',
+          fontSize: '1.5rem',
           fontWeight: 'bold',
         }}
       />

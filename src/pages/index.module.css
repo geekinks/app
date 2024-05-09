@@ -12,13 +12,25 @@
   width: 100%;
   text-align: center;
   position: relative;
+  background-image: url('@site/static/img/heroCover.png');
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 2rem;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    background-image: url('@site/static/img/heroCover.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
+
 }
 
 .buttons {

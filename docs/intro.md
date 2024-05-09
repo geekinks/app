@@ -6,13 +6,6 @@ sidebar_position: 1
 
 >Launch Your Tech Career Today!
 
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
 
 We understand the unique challenges faced by aspiring tech professionals in Northern Nigeria, including 
 **limited access to reliable power and internet** connectivity.

@@ -21,7 +21,7 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">
-        the premier learning platform empowering tech enthusiasts and future innovators across Northern Nigeria. Our mission is simple: to equip you with the knowledge, skills, and connections needed to thrive in the digital landscape.
+        Transform your passion for technology into impactful solutions. Learn by doing, gain expert guidance, and launch your own ventures with our comprehensive programs and supportive community
         </p>
         <div className={styles.buttons}>
           <Link
@@ -43,13 +43,13 @@ export default function Home() {
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+      <CustomDivider
+        label="Testimonials from Our Students" />
+        <Testimonials />
+        {/* <HomepageFeatures /> */}
         <CustomDivider
         label="Meet Our Exceptional Mentors" />
         <Mentors />
-        <CustomDivider
-        label="Testimonials from Our Students" />
-        <Testimonials />
         <CustomDivider
         label="Our Partners" />
         <Partners />
