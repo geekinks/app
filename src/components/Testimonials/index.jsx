@@ -5,7 +5,7 @@ import { Container,
    Card, CardContent, 
    CardHeader, Avatar } 
 from '@mui/material';
-
+import FaceTwoToneIcon from '@mui/icons-material/FaceTwoTone';
 import img1 from '@site/static/img/1.png';
 import img4 from '@site/static/img/2.jpeg';
 import img3 from '@site/static/img/1.png';
@@ -21,51 +21,51 @@ const getRandomTestimonials = () => {
 
 const testimonials = [
   {
-    avatar: <Avatar alt="Salma Gazali Abdulhamid" src={img1} />,
+    avatar: <Avatar alt="Salma Gazali Abdulhamid" src={<FaceTwoToneIcon/>} />,
     name: 'Salma Gazali Abdulhamid',
-    occupation: 'Tech Enthusiast',
+    // occupation: 'Tech Enthusiast',
     testimonial: "Being part of this project was inspiring and made me appreciate the power of hands-on learning. I learned so much through this project and feel more prepared for future challenges."
   },
   {
     avatar: <Avatar alt="Aliyu Sulaiman" src={img3} />,
     name: 'Aliyu Sulaiman',
-    occupation: 'Tech Innovator',
+    // occupation: 'Tech Innovator',
     testimonial: "Well deserved to be a mentor as a man of thought and also innovation beyond imagination."
   },
   {
     avatar: <Avatar alt="Hassan Musa Idris" src={img4} />,
     name: 'Hassan Musa Idris',
-    occupation: 'Software Developer',
+    // occupation: 'Software Developer',
     testimonial: "There is nothing I can say except to express thanks and appreciation for the work from our mentor in the person of ADAMU M. M (AdamsGeeky). I also learned what is Python and how Python is easier and simpler to communicate with human beings and how to collect and interpret objects using Python."
   },
   {
-    avatar: <Avatar alt="Salma Gazali Abdulhamid" src={img1} />,
+    avatar: <Avatar alt="Salma Gazali Abdulhamid" src={<FaceTwoToneIcon/>}  />,
     name: 'Salma Gazali Abdulhamid',
-    occupation: 'Tech Enthusiast',
+    // occupation: 'Tech Enthusiast',
     testimonial: "Having a supportive and knowledgeable mentor can make a big difference in any project or learning experience. His guidance and expertise can really help you to grow and succeed!"
   },
   {
-    avatar: <Avatar alt="Fatima Sulaiman" src={img5} />,
+    avatar: <Avatar alt="Fatima Sulaiman" src={<FaceTwoToneIcon/>}  />,
     name: 'Fatima Sulaiman',
-    occupation: 'Data Scientist',
+    // occupation: 'Data Scientist',
     testimonial: "The course was well-structured with a good balance between theory and practice. The instructor was knowledgeable and approachable, making learning Python both enjoyable and effective. I particularly appreciate the real-world applications demonstrated through the hands-on projects, which greatly enhanced my understanding and skills."
   },
   {
     avatar: <Avatar alt="Aliyu Sulaiman" src={img3} />,
     name: 'Aliyu Sulaiman',
-    occupation: 'Tech Innovator',
+    // occupation: 'Tech Innovator',
     testimonial: "Their ICT Center is advantageous for our people to explore and unlock their potentialities due to their conducive learning environment, lab resources, and also a well-guided/mentorship instructor and highlighters, for the advancement of our people within and outside the community."
   },
   {
     avatar: <Avatar alt="Hassan Musa Idris" src={img4} />,
     name: 'Hassan Musa Idris',
-    occupation: 'Software Developer',
+    // occupation: 'Software Developer',
     testimonial: "A very hardworking and dedicated person, thanks to his time and energy sacrifice, gentle and professional guy and also he knows what he is doing in terms of guiding and orienting his student/programmers learners."
   },
   {
-    avatar: <Avatar alt="Fatima Sulaiman" src={img5} />,
+    avatar: <Avatar alt="Fatima Sulaiman" src={<FaceTwoToneIcon/>}  />,
     name: 'Fatima Sulaiman',
-    occupation: 'Data Scientist',
+    // occupation: 'Data Scientist',
     testimonial: "My mentor was knowledgeable and approachable. He provided well-developed and understandable resources which made the program enjoyable and effective."
   },
 ];
@@ -95,7 +95,7 @@ export default function Testimonials() {
         }}
       >
         <Typography variant="body1" color="text.secondary">
-          At Geekink we take pride in the success and satisfaction of our students. Here's what some of our Cohort 1 participants had to say about their experience with us:
+          At Geekink we take pride in the success and satisfaction of our students. Here's what some of our Students had to say about their experience with us:
         </Typography>
       </Box>
       <Grid container spacing={2}>

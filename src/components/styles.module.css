@@ -1,0 +1,25 @@
+.customDivider {
+    margin: auto;
+    color: green;
+  }
+  
+  .customChip {
+    background-color: #E2F9F9;
+    color: green;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .customDivider {
+      width: 90vw; /* Adjust as needed */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .customDivider {
+      width: 95vw; /* Adjust as needed */
+    }
+  }
+  

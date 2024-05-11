@@ -5,8 +5,10 @@ import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Mentors from '../components/Mentors';
 import Partners from '../components/Partners';
+// import CTA from '../components/CTA';
 import Testimonials from '../components/Testimonials';
 import Services from '../components/Services';
+import Course from '../components/Course';
 import CustomDivider from '../components/CustomDivider';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
@@ -46,7 +48,8 @@ export default function Home() {
       <CustomDivider
         label="Testimonials from Our Students" />
         <Testimonials />
-        {/* <HomepageFeatures /> */}
+        <CustomDivider label="Explore our Courses"/>
+        <Course/>
         <CustomDivider
         label="Meet Our Exceptional Mentors" />
         <Mentors />
