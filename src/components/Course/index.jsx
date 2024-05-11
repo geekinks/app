@@ -123,7 +123,9 @@ export default function Course() {
                 color="inherit"
                 className="imageTitle"
               >
+                <Link to={image.link}>
                 {image.title}
+                </Link>
                 <div className="imageMarked" />
               </Typography>
             </Box>
