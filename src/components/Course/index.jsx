@@ -3,81 +3,82 @@ import Link from '@docusaurus/Link';
 import gcc from '@site/static/img/gcc.png';
 import python from '@site/static/img/python.png';
 import mlops from '@site/static/img/gcc.png';
-import java from '@site/static/img/reactjs.png';
+import java from '@site/static/img/java.jpg';
 import springboot from '@site/static/img/sprin.png';
 import node from '@site/static/img/node.jpeg';
-import mern from '@site/static/img/MERN.png';
-import react from '@site/static/img/reactjs.png';
-import django from '@site/static/img/reactjs.png';
+import mern from '@site/static/img/mern.png';
+import react from '@site/static/img/react.png';
+import django from '@site/static/img/django.jpg';
 import reactDjango from '@site/static/img/djangoReact.png';
 import reactSpringboot from '@site/static/img/Spring-Boot-React.png';
 
-import Box from '@mui/material/Box';
+
 import Button from '@mui/material/Button';
-import ButtonBase from '@mui/material/ButtonBase';
 import Container from '@mui/material/Container';
-import Typography from '../Typography';
-import Grid from '@mui/material/Grid';
+import CardActions from '@mui/material/CardActions';
+import CardMedia from '@mui/material/CardMedia';
+import { Grid, Card, CardContent, Typography} from '@mui/material';
+
 
 const courses = [
   {
    img: gcc,
     title: 'General Certificate in Computing',
-    description: 'Learn the fundamentals of computing with this comprehensive course.',
+    description: 'Unlock the world of computing with our comprehensive course! Dive deep into the fundamentals and emerge with a solid understanding of essential concepts that form the backbone of modern technology.',
     link: '/docs/basics/intro'
   },
   {
    img: python,
     title: 'Python Programming',
-    description: 'Master the versatile Python programming language and its applications.',
+    description: 'Embark on a journey of versatility and innovation with Python! Master one of the most popular programming languages known for its simplicity and power. From web development to data analysis, Python opens doors to endless possibilities.',
     link: '/docs/programming/python'
   },
   {
    img: java,
     title: 'Java Programming',
-    description: 'Learn Java programming language and its applications in software development.',
+    description: 'Join the ranks of elite developers with Java expertise! Delve into the world of object-oriented programming and learn to build robust, scalable applications that power enterprises and shape the digital landscape.',
     link: '/docs/programming/java'
   },
   {
    img: node,
     title: 'Backend Development with Node.js',
-    description: 'Build scalable backend applications with Node.js.',
+    description: 'Explore the realm of server-side development with Node.js! Harness the power of JavaScript to build fast and scalable backend solutions. From APIs to real-time applications, Node.js empowers you to create cutting-edge web services.',
     link: '/docs/career/node'
   },
   {
    img: springboot,
     title: 'Backend Development with Java',
-    description: 'Learn backend development using Java and its frameworks.',
+    description: 'Dive into the heart of enterprise-grade backend development with Java! Learn to leverage the rich ecosystem of Java frameworks and libraries to craft secure, high-performance backend systems that drive mission-critical applications.',
     link: '/docs/career/spring'
   },
   {
    img: django,
     title: 'Backend Development with Django',
-    description: 'Build web applications using Django, a high-level Python web framework.',
+    description: 'Unleash the full potential of web development with Django! Master the art of building dynamic and feature-rich web applications using Pythons elegant framework. From prototyping to deployment, Django streamlines the development process.',
     link: '/docs/career/django'
   },
   {
    img: mern,
     title: 'Fullstack Development with MERN',
-    description: 'Master fullstack development with MongoDB, Express.js, React, and Node.js stack.',
+    description: 'Embrace the MERN stack and become a fullstack ninja! Seamlessly integrate MongoDB, Express.js, React, and Node.js to build modern, interactive web applications. From data management to user interfaces, MERN offers a holistic approach to development.',
     link: '/docs/career/mern'
   },
   {
    img: react,
     title: 'Frontend Development with React',
-    description: 'Build interactive user interfaces with the popular React library.',
+    description: 'Elevate your frontend skills with React! Dive deep into component-based architecture and learn to build dynamic user interfaces with ease. From single-page applications to complex UIs, React empowers you to create engaging web experiences.',
     link: '/docs/career/react'
   },
   {
    img: reactDjango,
     title: 'Fullstack Development with React and Django',
-    description: 'Build fullstack web applications using React for frontend and Django for backend.',
+    description: 'Bridge the gap between frontend and backend with React and Django! Combine the power of a robust backend framework with a flexible frontend library to create fullstack web applications that deliver unmatched performance and user experience.',
     link: '/docs/career/djangoReact'
   },
   {
    img: reactSpringboot,
     title: 'Fullstack Development with React and Spring Boot',
-    description: 'Develop fullstack web applications using React for frontend and Spring Boot for backend.',
+    description: 'Harness the synergy of React and Spring Boot for fullstack mastery! Seamlessly integrate the frontend magic of React with the robustness of Spring Boot to build scalable, enterprise-grade web applications that set new standards in performance and reliability.',
     link: '/docs/career/springReact'
   },
   // {
@@ -91,48 +92,46 @@ const courses = [
 
 export default function Course() {
   return (
-    <Container component="section" sx={{ mt: 8, mb: 4 }}>
-      <Grid container spacing={3}>
-        {courses.map((course) => (
-          <Grid item xs={12} sm={6} md={4} lg={3} key={course.title}>
-            <ButtonBase
-              sx={{
-                width: '100%',
-                borderRadius: 0,
-                position: 'relative',
-                overflow: 'hidden',
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                justifyContent: 'center',
-                minHeight: '40vh',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                // backgroundImage: `url(${course.img})`,
-                color: 'inherit',
-                textDecoration: 'none',
-                transition: 'opacity 0.3s',
-                '&:hover': {
-                  opacity: 0.9,
-                },
-                bgcolor: 'rgba(76, 175, 80, 0.8)', // Green background color
-              }}
-            >
-              <Box sx={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, bgcolor: 'rgba(0,0,0,0.5)' }} />
-              <Typography variant="h5" color="inherit" sx={{ 
-                zIndex: 1,
-                fontWeight: '500'
-              
-              }}>{course.title}</Typography>
-              <Typography variant="body2" color="inherit" textAlign="center" sx={{ zIndex: 1, mt: 1, px: 2,}}>{course.description}</Typography>
-              <Button 
-              component={Link}
-              to={course.link}
-              variant="contained" color="success" sx={{ mt: 2, zIndex: 1 }}>Learn More</Button>
-            </ButtonBase>
-          </Grid>
-        ))}
-      </Grid>
-    </Container>
+    <>
+      <Container maxWidth='lg'>
+        <Typography variant='h5' align='center' style={{ marginTop: '15px' }}>
+          Dive into a world of possibilities with our comprehensive courses covering everything from fundamental computing concepts to cutting-edge technologies like Python, Java, React, and more.
+        </Typography>
+        <Grid container spacing={5} style={{ marginTop: '20px' }}>
+          {
+            courses.map((course, index) => (
+              <Grid item xs={12} ms={4} sm={4} key={index}>
+                <Card sx={{ maxWidth: 345 }} style={{ padding: '10px', marginBottom: '30px' }}>
+                  <CardMedia
+                    component="img"
+                    alt={course.title}
+                    height="140"
+                    image={course.img}
+                    style={{
+                      width: '100%',
+                      height: '200px', // Set a fixed height for consistency
+                      objectFit: 'cover',
+                      borderRadius: '5px'
+                    }}
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5" component="div"  align='center'>
+                      {course.title}
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      {course.description}
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" variant='contained' style={{ backgroundColor: '#4caf50', color: 'white' }}>Enroll</Button>
+                    <Button size="small" variant='contained' component={Link} to={course.link} style={{ backgroundColor: '#4caf50', color: 'white' }}>Learn More</Button>
+                  </CardActions>
+                </Card>
+              </Grid>
+            ))
+          }
+        </Grid>
+      </Container>
+    </>
   );
 }
