@@ -111,7 +111,7 @@ export default function Course() {
                       width: '100%',
                       height: '200px', // Set a fixed height for consistency
                       objectFit: 'cover',
-                      borderRadius: '5px'
+                      borderRadius: '25px'
                     }}
                   />
                   <CardContent>
