@@ -4,11 +4,11 @@ sidebar_position: 1
 
 # GeekInk Python Programming Syllabus
 
+![](../img/python.png)
+
 2-Month Intensive Course
 
-This intensive Python programming course is designed to equip aspiring technopreneurs with the fundamental skills and knowledge needed to build their own tech ventures.
-
-The course covers programming basics, object-oriented programming (OOP) principles, and data structures & algorithms (DSA), providing a solid foundation for future learning and development.
+Unlock your potential as a technopreneur with GeekInk’s intensive Python programming course. Designed to provide you with the essential skills and knowledge needed to build your own tech ventures, this program is perfect for aspiring innovators. Dive into programming basics, object-oriented programming (OOP), and data structures & algorithms (DSA) to establish a strong foundation for future learning and development.
 
 ## Course Duration
 
@@ -16,67 +16,81 @@ The course covers programming basics, object-oriented programming (OOP) principl
 
 ## Course Objectives
 
-- Understand the fundamentals of Python programming.
-- Apply OOP concepts to design and build robust applications.
-- Implement essential data structures and algorithms for efficient problem-solving.
-- Develop problem-solving and critical thinking skills.
-- Gain confidence in building basic Python applications.
+- **Master Python Fundamentals:** Understand the core principles of Python programming.
+- **Design Robust Applications:** Apply OOP concepts to create scalable and maintainable software.
+- **Efficient Problem-Solving:** Implement key data structures and algorithms for optimized solutions.
+- **Critical Thinking:** Develop analytical skills for tackling complex problems.
+- **Hands-On Experience:** Gain confidence by building practical Python applications.
+
+## Learn by Doing: Project-Based Approach
+
+At GeekInk, we believe in learning by doing. This course immerses you in hands-on projects from the start, ensuring you not only learn theoretical concepts but also apply them to real-world scenarios. By the end of the course, you’ll have a portfolio of projects that demonstrate your Python programming prowess.
 
 ## Course Outline
 
-### Module 1 Introduction to Python Programming (6 classes)
+<details>
+  <summary>Module 1: Introduction to Python Programming (6 classes)</summary>
+- Setting Up: Development environment configuration
+- Basics: Syntax, data types (numbers, strings, booleans)
+- Core Concepts: Variables, operators, input/output
+- Control Flow: If-else statements, loops
+- Modular Programming: Functions and modules
+</details>
 
-- Setting up the development environment
-- Basic syntax and data types (numbers, strings, booleans)
-- Variables and operators
-- Input and output
-- Control flow statements (if-else, loops)
-- Functions and modules
+<details>
+  <summary>Module 2: Object-Oriented Programming (OOP) in Python (6 classes)</summary>
+- OOP Fundamentals: Classes, objects, inheritance, polymorphism
+- Class Design: Defining classes and creating objects
+- Advanced OOP: Inheritance, method overriding, operator overloading
+- Robust Code: Exception handling
+</details>
 
-### Module 2 Object-Oriented Programming (OOP) in Python (6 classes)
+<details>
+  <summary>Module 3: Data Structures & Algorithms (DSA) (6 classes)</summary>
+- Data Structures: Lists, tuples, dictionaries, sets
+- Algorithms: Searching, sorting techniques
+- Problem-Solving: Recursion
+- Efficiency: Time and space complexity analysis
+- Algorithm Design: Basic techniques
+</details>
 
-- Introduction to OOP concepts (classes, objects, inheritance, polymorphism)
-- Defining classes and creating objects
-- Class attributes and methods
-- Inheritance and method overriding
-- Polymorphism and operator overloading
-- Exception handling
+<details>
+  <summary>Module 4: Building Python Applications (6 classes)</summary>
+- File Management: Working with files and directories
+- Libraries: Introduction to NumPy and Pandas
+- Practical Applications: Building command-line applications
+- Web Development: Introduction to Flask framework
+- Capstone Project: Develop a simple Python application
+</details>
 
-### Module 3 Data Structures & Algorithms (DSA) (6 classes)
+<details>
+  <summary>Assessment</summary>
+- Quizzes & Assignments: Regular evaluations to reinforce learning
+- Exams: Mid-term and final assessments to gauge understanding
+- Project Evaluation: Comprehensive review of the final project
+</details>
 
-- Introduction to data structures (lists, tuples, dictionaries, sets)
-- Algorithms for searching and sorting
-- Recursion
-- Time and space complexity analysis
-- Basic algorithm design techniques
-
-### Module 4 Building Python Applications (6 classes)
-
-- Working with files and directories
-- Introduction to libraries and modules (NumPy, Pandas)
-- Building basic command-line applications
-- Introduction to web development with Python (Flask framework)
-- Project: Develop a simple Python application
-
-## Assessment
-
-- Regular quizzes and assignments
-- Mid-term and final exams
-- Project evaluation
-
-## Learning Resources
-
-- Interactive lectures and demonstrations
-- Hands-on coding exercises and projects
-- Online resources and reference materials
-- GeekInk's equipped lab with reliable power and internet access
+<details>
+  <summary>Learning Resources</summary>
+- Interactive Lectures: Engaging and informative sessions
+- Hands-On Exercises: Practical coding exercises and projects
+- Online Materials: Access to comprehensive reference materials
+- State-of-the-Art Lab: GeekInk’s equipped lab with reliable power and internet access
+</details>
 
 ## Prerequisites
 
 - Basic computer literacy
 - No prior programming experience required
 
-This Python programming course provides a solid foundation for aspiring technopreneurs to develop their skills and build innovative tech solutions.
+## Invest in Your Future:
 
-By combining theoretical knowledge with practical application, GeekInk empowers you to turn your entrepreneurial dreams into reality.
+:::tip
+- **Course Price:** **₦15,000 ~~₦20,000~~** (discounted price for the first 5 students)
+:::
+
+## Act Now! Limited Spots Available!
+
+Ready to become a Python programming maestro and build innovative tech solutions? Don’t wait! Enroll in our "GeekInk Python Programming" course today and unlock your full potential as a developer. Limited spots are available.
+[Click here](#) to secure your place and start your Python programming journey!
 

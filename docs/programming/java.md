@@ -14,57 +14,62 @@ This intensive Java SE programming course is designed to empower aspiring techno
 
 ## Course Objectives:
 
-- Understand the fundamentals of Java programming and the Java SE platform.
-- Apply OOP concepts to design and build maintainable and reusable code.
-- Utilize core Java libraries and APIs for developing applications.
-- Develop problem-solving and critical thinking skills in the context of Java development.
-- Gain confidence in building Java applications for various purposes.
+- **Master Java Fundamentals:** Understand the core principles of Java programming.
+- **Deep Dive into OOP:** Explore advanced OOP concepts for building scalable applications.
+- **Utilize Core Java APIs:** Learn to work with Java SE platform and its libraries.
+- **Build Java Applications:** Gain practical experience in designing and developing Java applications.
+- **Project-Based Learning:** Apply your skills to real-world projects to reinforce learning.
 
-## Course Outline:
 
-### Module 1: Introduction to Java Programming & Java SE (6 classes)
+## Course Outline
 
+<details>
+  <summary>Module 1: Introduction to Java Programming & Java SE (6 classes)</summary>
 - Setting up the Java development environment
 - Basic syntax and data types (primitives, objects)
 - Variables, operators, and expressions
 - Control flow statements (if-else, loops)
 - Methods and classes
 - Introduction to the Java SE platform and its core libraries
+</details>
 
-### Module 2: Object-Oriented Programming (OOP) in Java (6 classes)
-
+<details>
+  <summary>Module 2: Object-Oriented Programming (OOP) in Java (6 classes)</summary>
 - Deep dive into OOP concepts (classes, objects, inheritance, polymorphism, encapsulation)
 - Constructors, methods, and access modifiers
 - Inheritance and method overriding
 - Polymorphism and interfaces
 - Abstract classes and methods
 - Exception handling and error management
+</details>
 
-### Module 3: Core Java APIs and Libraries (6 classes)
-
+<details>
+  <summary>Module 3: Core Java APIs and Libraries (6 classes)</summary>
 - Working with strings and string manipulation
 - Collections framework (Lists, Sets, Maps)
 - Input and output operations
 - Multithreading and concurrency
 - Networking and socket programming
 - Introduction to JavaFX for building graphical user interfaces (GUIs)
+</details>
 
-### Module 4: Building Java Applications (6 classes)
-
+<details>
+  <summary>Module 4: Building Java Applications (6 classes)</summary>
 - Design patterns and best practices for Java development
 - Working with databases using JDBC
 - Building console-based and GUI applications
 - Unit testing with JUnit
 - Introduction to Java web development with servlets and JSP
 - Project: Develop a Java application of your choice
+</details>
 
-## Assessment:
+## Assessment
 
 - Regular quizzes and assignments
 - Mid-term and final exams
 - Project evaluation
 
-## Learning Resources:
+## Learning Resources
 
 - Interactive lectures and demonstrations
 - Hands-on coding exercises and projects
