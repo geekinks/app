@@ -4,6 +4,8 @@ sidebar_position: 2
 
 # GeekInk Java SE Programming Syllabus
 
+![](../img/java.jpg)
+
 2-Month Intensive Course
 
 This intensive Java SE programming course is designed to empower aspiring technopreneurs with the essential skills and knowledge needed to build robust and scalable applications. The course covers programming fundamentals, object-oriented programming (OOP) principles, and key concepts of the Java Standard Edition (SE) platform, providing a strong foundation for future learning and development.

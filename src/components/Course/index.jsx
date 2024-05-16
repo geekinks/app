@@ -123,7 +123,10 @@ export default function Course() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small" variant='contained' style={{ backgroundColor: '#4caf50', color: 'white' }}>Enroll</Button>
+                    <Button 
+                    size="small" variant='contained' 
+                    href='https://forms.gle/MPk5Kuh6E9dxdqYy6'
+                     style={{ backgroundColor: '#4caf50', color: 'white' }}>Enroll</Button>
                     <Button size="small" variant='contained' component={Link} to={course.link} style={{ backgroundColor: '#4caf50', color: 'white' }}>Learn More</Button>
                   </CardActions>
                 </Card>

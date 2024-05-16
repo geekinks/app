@@ -124,11 +124,10 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       announcementBar: {
-        id: 'support_us',
         content:
-          'We are looking to revamp our docs, please fill <a target="_blank" rel="noopener noreferrer" href="https://forms.gle/MPk5Kuh6E9dxdqYy6">this survey</a>',
-        backgroundColor: '#fafbfc',
-        textColor: '#091E42',
+          'Expand Your Skills with Our Comprehensive Courses <a target="_blank" rel="noopener noreferrer" href="https://forms.gle/MPk5Kuh6E9dxdqYy6">Enroll Now</a>',
+        backgroundColor: '#28a745',
+        textColor: '#FFFFFF',
         isCloseable: false,
       },
       // Replace with your project's social car
