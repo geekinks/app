@@ -6,31 +6,33 @@ sidebar_position: 1
 
 >Launch Your Tech Career Today!
 
-
 We understand the unique challenges faced by aspiring tech professionals in Northern Nigeria, including 
 **limited access to reliable power and internet** connectivity.
 
 That's why GeekInk offers not only comprehensive online courses but also a fully equipped lab where you can learn and practice your skills without interruption.
 
-<!-- $$
-I = \int_0^{2\pi} \sin(x)\,dx
-$$ -->
-
 ## Our Courses
 
-- **Programming Fundamentals:**
-  - Python Programming
-  - JavaScript Programming
-  - Java Programming
-  - Object-Oriented Programming (OOP) & Data Structures & Algorithms (DSA)
-- **Career Path Specializations:**
-  - Frontend Development (ReactJS)
-  - Backend Development (Django, Node.js, Spring Boot)
-  - Fullstack Development (MERN, Java + React, Django + React)
-  - DevOps
-  - MLOps
 - **Essential Skills:**
-  - Computer Basics (Microsoft Word, Excel, PowerPoint)
+  - [Computer Basics (Microsoft Word, Excel, PowerPoint)](./basics/intro.mdx)
+
+- **Programming Fundamentals:**
+  - [Python Programming Object-Oriented Programming & Data Structures & Algorithms](./programming/python.md)
+  - [Java Programming Object-Oriented Programming & Data Structures & Algorithms](./programming/java.md)
+
+- **Career Path Specializations:**
+  - **Frontend**
+    - [Frontend Development (ReactJS)](./career/react.mdx)
+
+  - **Backend**
+    - [Backend Development (Django & Flask)](./career/django.mdx)
+    - [Backend Development (Node)](./career/node.mdx)
+    - [Backend Development (Spring Boot)](./career/spring.mdx)
+
+  - **Fullstack**
+    - [Fullstack Development (MERN)](./career/mern.mdx)
+    - [Fullstack Development(Java + React)](./career/springReact.mdx)
+    - [Fullstack Development(Django + React)](./career/djangoReact.mdx)
 
 ## GeekInk Lab: Your Powerhouse for Learning
 

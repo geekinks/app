@@ -123,6 +123,14 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      announcementBar: {
+        id: 'support_us',
+        content:
+          'We are looking to revamp our docs, please fill <a target="_blank" rel="noopener noreferrer" href="https://forms.gle/MPk5Kuh6E9dxdqYy6">this survey</a>',
+        backgroundColor: '#fafbfc',
+        textColor: '#091E42',
+        isCloseable: false,
+      },
       // Replace with your project's social car
       mermaid: {
         theme: {light: 'neutral', dark: 'forest'}
