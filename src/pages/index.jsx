@@ -9,6 +9,7 @@ import Partners from '../components/Partners';
 import Testimonials from '../components/Testimonials';
 import Services from '../components/Services';
 import Course from '../components/Course';
+import Hero from '../components/Hero';
 import CustomDivider from '../components/CustomDivider';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
@@ -43,7 +44,8 @@ export default function Home() {
     <Layout
       title={`home`}
       description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
+      {/* <HomepageHeader /> */}
+      <Hero/>
       <main>
       <CustomDivider
         label="Testimonials from Our Students" />
@@ -51,7 +53,7 @@ export default function Home() {
         <CustomDivider label="Explore our Courses"/>
         <Course/>
         <CustomDivider
-        label="Meet Our Exceptional Mentors" />
+        label="Meet Our Mentors" />
         <Mentors />
         <CustomDivider
         label="Our Partners" />
