@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Founder from './Founder'
 import { alpha } from '@mui/material';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -6,10 +7,20 @@ import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import Container from '@mui/material/Container';
 import Link from '@docusaurus/Link';
 import Stack from '@mui/material/Stack';
+import CustomDivider from '@site/src/components/CustomDivider';
 // import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 
 export default function Hero() {
+  const founderInfo = {
+    image: '/img/hero.png', // Replace with the actual image path or URL
+    bio: "Our mentors aren't just tech experts—they're industry leaders, innovators, and passionate advocates for open source collaboration. With years of experience and a deep commitment to empowering the next generation of tech heroes, they're the driving force behind our mission to revolutionize tech education in the northern region of Nigeria.",
+    experiences: [
+      'Expertise: Our mentors bring a wealth of knowledge and expertise to the table, spanning a wide range of tech fields and disciplines',
+      'Dedication: They are deeply committed to guiding and supporting students, offering personalized mentorship and hands-on assistance.',
+      'Impact: Through their leadership and advocacy, our mentors are making a tangible impact on the world of technology, shaping the future of open source and inspiring the next generation of tech leaders.',
+    ],
+  };
   return (
     <Box
       id="hero"
@@ -81,6 +92,7 @@ export default function Hero() {
           <Box
       sx={{
         pt: 4,
+        mb: 4,
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
@@ -176,6 +188,15 @@ export default function Hero() {
       </Box>
     </Stack> */}
     {/*  */}
+    <CustomDivider
+        label="Meet Our Mentors" />
+    <Box sx={{ width: '100%', mt: { xs: 8, sm: 12 } }}>
+        <Founder
+          image={founderInfo.image}
+          bio={founderInfo.bio}
+          experiences={founderInfo.experiences}
+        />
+      </Box>
   </Stack>
 </Container>
 </Box>
