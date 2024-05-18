@@ -6,6 +6,7 @@ import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import Container from '@mui/material/Container';
 import Link from '@docusaurus/Link';
 import Stack from '@mui/material/Stack';
+// import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 
 export default function Hero() {
@@ -70,79 +71,113 @@ export default function Hero() {
           <Typography
             textAlign="center"
             color="text.secondary"
-            sx={{ alignSelf: 'center', width: { sm: '100%', md: '80%' } }}
+            sx={{ pt: 3, alignSelf: 'center', width: { sm: '100%', md: '80%' } }}
           >
-            At Geek Ink, we're not just about teaching you code; we're about empowering you to become a tech powerhouse.            
+             At Geek Ink, we believe in practical knowledge. Our courses are project-based: learn by building.            
           </Typography>
         </Stack>
         <Stack>
-        <Box
-          id="image"
-          sx={(theme) => ({
-            mt: { xs: 8, sm: 10 },
-            alignSelf: 'center',
-            height: 'auto',
-            width: '100%',
-            backgroundSize: 'cover',
-            borderRadius: '10px',
-            backgroundPosition: 'center',
-            border: 'green solid 1px',
-            outline: '1px solid',
-        
-          })}
+          {/* 3 icons for Skills, Mentors, investors  */}
+          <Box
+      sx={{
+        pt: 4,
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        width: '100%',
+        gap: 2,
+        '@media (min-width: 600px)': {
+          flexDirection: 'row',
+        },
+      }}
+    >
+      {['Skills', 'Innovate', 'Build'].map((text) => (
+        <Stack
+          key={text}
+          direction="row"
+          spacing={2}
+          sx={{ alignSelf: 'center', width: { xs: '100%', sm: 'auto' } }}
         >
-            <Container
+          <Typography
+            component="span"
+            variant="h1"
             sx={{
               display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              justifyContent: 'center',
-              height: '100%',
-              p: { xs: 2, sm: 4 },
+              flexDirection: { xs: 'column', md: 'row' },
+              alignSelf: 'center',
+              textAlign: 'center',
+              fontSize: 'clamp(3rem, 10vw, 2rem)',
+              color: 'success.main',
             }}
           >
-            <Typography
-              variant="h4"
-              textAlign="center"
-              sx={{ color: 'success.main', mb: { xs: 2, sm: 4 } }}
-            >
-              Our Mission
-            </Typography>
-            <Stack
-              spacing={2}
-              sx={{ width: { xs: '100%', sm: '80%' }, textAlign: 'center' }}
-            >
-              
-              <Stack direction="row" spacing={1} alignItems="center">
-                <CheckCircleOutlineIcon color="success" />
-                <Typography variant="body1" color="text.secondary">
-                  Equip aspiring tech enthusiasts with the practical skills and knowledge they need to thrive in the industry.
-                </Typography>
-              </Stack>
-              <Stack direction="row" spacing={1} alignItems="center">
-                <CheckCircleOutlineIcon color="success" />
-                <Typography variant="body1" color="text.secondary">
-                  Foster a collaborative learning environment that encourages innovation and problem-solving.
-                </Typography>
-              </Stack>
-              <Stack direction="row" spacing={1} alignItems="center">
-                <CheckCircleOutlineIcon color="success" />
-                <Typography variant="body1" color="text.secondary">
-                  Bridge the mentorship gap by connecting you with experienced Local tech professionals from the ALX and Developers Network .
-                </Typography>
-              </Stack>
-            </Stack>
-          </Container>
-          {/* 
-            TODO: Our Mission
-    1. Equip aspiring tech enthusiasts with the practical skills and knowledge they need to thrive in the industry.
-    2. Foster a collaborative learning environment that encourages innovation and problem-solving.
-    3. Bridge the mentorship gap by connecting you with experienced tech professionals from the ALX Network.
-    4. Make quality tech education accessible, regardless of location or resources.
-            */}
-        </Box>
+            {text} 
+          </Typography>
+          <CheckCircleOutlineIcon color="success" fontSize="large" />
         </Stack>
-      </Container>
+      ))}
     </Box>
+    {/*  */}
+    {/* <Stack > */}
+    {/* <Box
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          marginTop: 4,
+          width: '100%',
+          '@media (min-width: 600px)': {
+            flexDirection: 'row',
+            justifyContent: 'center',
+          },
+        }}
+      >
+        <Typography
+          component="p"
+          variant="h6"
+          sx={{
+            textAlign: 'center',
+            fontSize: 'clamp(1rem, 2vw, 1.5rem)',
+            color: 'text.success',
+            marginBottom: 2,
+            marginRight: 2,
+          }}
+        >
+          Subscribe to be notified about our new courses
+        </Typography>
+        <Box
+          component="form"
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            gap: 2,
+            width: '100%',
+            '@media (min-width: 600px)': {
+              flexDirection: 'row',
+              width: 'auto',
+            },
+          }}
+        >
+          <TextField 
+            label="Email" 
+            variant="outlined" 
+            size="small" 
+            sx={{ width: { xs: '100%', sm: 'auto' } }}
+          />
+          <Button 
+            variant="contained" 
+            color="success" 
+            sx={{ width: { xs: '100%', sm: 'auto' } }}
+          >
+            Subscribe
+          </Button>
+        </Box>
+      </Box>
+    </Stack> */}
+    {/*  */}
+  </Stack>
+</Container>
+</Box>
   );
 }

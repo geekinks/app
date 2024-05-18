@@ -2,15 +2,13 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import Mentors from '../components/Mentors';
-import Partners from '../components/Partners';
-// import CTA from '../components/CTA';
+import Mentors from '@site/src/components/Mentors';
+import Partners from '@site/src/components/Partners';
 import Testimonials from '../components/Testimonials';
-import Services from '../components/Services';
-import Course from '../components/Course';
-import Hero from '../components/Hero';
-import CustomDivider from '../components/CustomDivider';
+// import Pricing from '@site/src/components/Pricing';
+import Course from '@site/src/components/Course';
+import Hero from '@site/src/components/Hero';
+import CustomDivider from '@site/src/components/CustomDivider';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
@@ -58,6 +56,7 @@ export default function Home() {
         <CustomDivider
         label="Our Partners" />
         <Partners />
+        {/* <Pricing/> */}
       </main>
     </Layout>
   );

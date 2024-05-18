@@ -124,11 +124,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       announcementBar: {
+        id: 'announcementBar-1',
         content:
           'Expand Your Skills with Our Comprehensive Courses <a target="_blank" rel="noopener noreferrer" href="https://forms.gle/MPk5Kuh6E9dxdqYy6">Enroll Now</a>',
-        backgroundColor: '#28a745',
-        textColor: '#FFFFFF',
+        textColor: '#000',
         isCloseable: false,
+        backgroundColor: 'orange',
       },
       // Replace with your project's social car
       mermaid: {
