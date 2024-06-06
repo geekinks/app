@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunknew=self.webpackChunknew||[]).push([[5433],{8675:(t,e,i)=>{i.r(e),i.d(e,{default:()=>s});i(6540);var n=i(8244),r=i(4848);const s=function(){return(0,r.jsx)(n.A,{title:"writting",description:"Description will go into a meta tag in <head />",children:(0,r.jsx)("h1",{children:"writting"})})}}}]);

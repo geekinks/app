@@ -4,63 +4,63 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from 'prism-react-renderer';
-import remarkMath from 'remark-math';
-import rehypeKatex from 'rehype-katex';
+import { themes as prismThemes } from "prism-react-renderer";
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Geek ink',
-  tagline: 'Technoprenurship School for Geeks',
-  favicon: 'img/favicon/favicon.ico',
+  title: "Geek ink",
+  tagline: "Technoprenurship School for Geeks",
+  favicon: "img/favicon/favicon.ico",
 
   // Set the production url of your site here
-  url: 'https://geekink.com.ng',
+  url: "https://geekink.com.ng",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'geekinks', // Usually your GitHub org/user name.
-  projectName: 'app', // Usually your repo name.
+  organizationName: "geekinks", // Usually your GitHub org/user name.
+  projectName: "app", // Usually your repo name.
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   markdown: {
     mermaid: true,
   },
-  themes: ['@docusaurus/theme-mermaid'],
+  themes: ["@docusaurus/theme-mermaid"],
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         // analytics
         gtag: {
-          trackingID: 'G-1MBRGBYCHX',
+          trackingID: "G-1MBRGBYCHX",
           anonymizeIP: true,
         },
         // sitemap
         sitemap: {
-          lastmod: 'date',
-          changefreq: 'weekly',
+          lastmod: "date",
+          changefreq: "weekly",
           priority: 0.5,
-          ignorePatterns: ['/tags/**'],
-          filename: 'sitemap.xml',
+          ignorePatterns: ["/tags/**"],
+          filename: "sitemap.xml",
         },
         docs: {
-          sidebarPath: './sidebars.js',
-          path: 'docs',
+          sidebarPath: "./sidebars.js",
+          path: "docs",
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
           // editUrl:
@@ -74,45 +74,45 @@ const config = {
           //   'https://github.com/geekinks',
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
       }),
     ],
   ],
   stylesheets: [
     {
-      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
-      type: 'text/css',
+      href: "https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css",
+      type: "text/css",
       integrity:
-        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
-      crossorigin: 'anonymous',
+        "sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM",
+      crossorigin: "anonymous",
     },
   ],
   plugins: [
     [
-      '@docusaurus/plugin-pwa',
+      "@docusaurus/plugin-pwa",
       {
         debug: true,
         offlineModeActivationStrategies: [
-          'appInstalled',
-          'standalone',
-          'queryString',
+          "appInstalled",
+          "standalone",
+          "queryString",
         ],
         pwaHead: [
           {
-            tagName: 'link',
-            rel: 'icon',
-            href: '/img/logo.png',
+            tagName: "link",
+            rel: "icon",
+            href: "/img/logo.png",
           },
           {
-            tagName: 'link',
-            rel: 'manifest',
-            href: './static/manifest.json', // your PWA manifest
+            tagName: "link",
+            rel: "manifest",
+            href: "./static/manifest.json", // your PWA manifest
           },
           {
-            tagName: 'meta',
-            name: 'theme-color',
-            content: 'rgb(37, 194, 160)',
+            tagName: "meta",
+            name: "theme-color",
+            content: "rgb(37, 194, 160)",
           },
         ],
       },
@@ -124,32 +124,40 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       announcementBar: {
-        id: 'announcementBar-1',
+        id: "announcementBar-1",
         content:
           'Expand Your Skills with Our Comprehensive Courses <a target="_blank" rel="noopener noreferrer" href="https://forms.gle/MPk5Kuh6E9dxdqYy6">Enroll Now</a>',
-        textColor: '#000',
+        textColor: "#000",
         isCloseable: false,
-        backgroundColor: 'orange',
+        backgroundColor: "orange",
       },
       // Replace with your project's social car
       mermaid: {
-        theme: {light: 'neutral', dark: 'forest'}
+        theme: { light: "neutral", dark: "forest" },
       },
-      image: 'img/docusaurus-social-card.jpg',
+      image: "img/docusaurus-social-card.jpg",
       navbar: {
         logo: {
-          alt: 'app Logo',
-          src: 'img/logo.png',
+          alt: "app Logo",
+          src: "img/logo.png",
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'programmingSidebar',
-            position: 'left',
-            label: 'Courses',
+            type: "docSidebar",
+            sidebarId: "programmingSidebar",
+            position: "left",
+            label: "Courses",
           },
-        
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            type: "dropdown",
+            label: "Services",
+            position: "left",
+            items: [
+              { to: "/consultancy", label: "IT Consultancy" },
+              { to: "/research", label: "Technical Research Assistance" },
+            ],
+          },
+          { to: "/blog", label: "Blog", position: "left" },
           // {
           //   href: 'https://github.com/geekinks',
           //   label: 'GitHub',
@@ -158,44 +166,44 @@ const config = {
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           {
-            title: 'Explore',
+            title: "Explore",
             items: [
               {
-                label: 'Courses',
-                to: '/docs/intro',
+                label: "Courses",
+                to: "/docs/intro",
               },
             ],
           },
           {
-            title: 'Community',
+            title: "Community",
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://github.com/geekinks',
+                label: "Stack Overflow",
+                href: "https://github.com/geekinks",
               },
               {
-                label: 'Discord',
-                href: 'https://github.com/geekinks',
+                label: "Discord",
+                href: "https://github.com/geekinks",
               },
               {
-                label: 'Twitter',
-                href: 'https://github.com/geekinks',
+                label: "Twitter",
+                href: "https://github.com/geekinks",
               },
             ],
           },
           {
-            title: 'More',
+            title: "More",
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: "Blog",
+                to: "/blog",
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/geekinks',
+                label: "GitHub",
+                href: "https://github.com/geekinks",
               },
             ],
           },

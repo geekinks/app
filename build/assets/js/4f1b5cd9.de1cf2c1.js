@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunknew=self.webpackChunknew||[]).push([[185],{7844:e=>{e.exports=JSON.parse('{"tag":{"label":"Engineer","permalink":"/blog/tags/engineer","allTagsPath":"/blog/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/blog/tags/engineer","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
