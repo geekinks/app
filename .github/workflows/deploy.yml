@@ -1,4 +1,4 @@
-name: Deploy to Server
+name: Deploy action
 
 on:
   push:
@@ -19,8 +19,11 @@ jobs:
           node-version: '16'
           cache: 'npm'
 
+      - name: Clear npm cache
+        run: npm cache clean --force
+
       - name: Install dependencies
-        run: npm ci
+        run: npm install --legacy-peer-deps
 
       - name: Build website
         run: npm run build
