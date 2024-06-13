@@ -1,7 +1,6 @@
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import Hero from "@site/src/components/Hero";
-
 import App from "../components/App";
 
 export default function Home() {

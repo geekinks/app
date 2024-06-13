@@ -1,6 +1,4 @@
 import { ThemeProvider, createTheme } from "@mui/material/styles";
-// import Services from "./Services";
-import Mentors from "./Mentors";
 import Courses from "./Courses";
 import Partners from "./Partners";
 import FAQ from "./FAQ";
@@ -18,7 +16,6 @@ const theme = createTheme({
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Mentors />
       <Courses />
       <Partners />
       <FAQ />
