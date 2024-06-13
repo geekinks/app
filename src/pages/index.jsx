@@ -1,32 +1,19 @@
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
-import Partners from "@site/src/components/Partners";
-import Testimonials from "../components/Testimonials";
-// import Pricing from '@site/src/components/Pricing';
-import FAQ from "@site/src/components/FAQ";
-import Courses from "@site/src/components/Courses";
 import Hero from "@site/src/components/Hero";
-import Homepage from "@site/src/components/Home";
-import CustomDivider from "@site/src/components/CustomDivider";
-import styles from "./index.module.css";
+
+import App from "../components/App";
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       title={`home`}
-      description="Description will go into a meta tag in <head />"
+      description="Geek Ink: Technopreneurship LinkedInuted of Social Innovators. <head />"
     >
       <Hero />
-      {/* <Homepage/> */}
       <main>
-        <CustomDivider label="Testimonials from Our Students" />
-        <Testimonials />
-        <Courses />
-        <CustomDivider label="Our Partners" />
-        <Partners />
-        {/* <Pricing/> */}
-        <FAQ />
+        <App />
       </main>
     </Layout>
   );
