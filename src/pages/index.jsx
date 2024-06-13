@@ -4,7 +4,6 @@ import Hero from "@site/src/components/Hero";
 import App from "../components/App";
 
 export default function Home() {
-  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       title={`home`}

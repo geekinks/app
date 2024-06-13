@@ -1,97 +1,147 @@
-import * as React from "react";
-import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
-import Stack from "@mui/material/Stack";
-import Typography from "@mui/material/Typography";
+// src/components/Services.js
+import React from "react";
+import Link from "@docusaurus/Link";
+import { Container, Grid, Box, Typography, Button } from "@mui/material";
+import { styled } from "@mui/system";
+import { green, blue, black } from "@mui/material/colors";
 import { motion } from "framer-motion";
 
-export default function Services() {
-  const scrollToCourses = () => {
-    const coursesSection = document.getElementById("courses-section");
-    if (coursesSection) {
-      coursesSection.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-  };
+const SectionBox = styled(Box)(({ theme }) => ({
+  padding: theme.spacing(4),
+  textAlign: "center",
+  borderRadius: theme.shape.borderRadius,
+  boxShadow: theme.shadows[3],
+  backgroundColor: "#fff",
+  marginBottom: theme.spacing(4),
+}));
 
+const courses = [
+  "Introduction to Entrepreneurship",
+  "Startup Funding and Financing",
+  "Marketing for Startups",
+  "Lean Startup Methodology",
+  "Innovation and Creativity in Business",
+];
+
+const Services = () => {
   return (
-    <Box
-      id="services"
-      sx={{
-        width: "100%",
-        py: { xs: 10, sm: 14 },
-        backgroundColor: "#f5f5f5",
-        textAlign: "center",
-      }}
-    >
-      <Container>
-        <Typography variant="h2" gutterBottom sx={{ color: "#1b5e20" }}>
+    <Box sx={{ py: 8, backgroundColor: "#f5f5f5" }}>
+      <Container maxWidth="lg">
+        <Typography
+          variant="h4"
+          component="h2"
+          gutterBottom
+          align="center"
+          color="black"
+        >
           Our Services
         </Typography>
-        <Stack spacing={4} sx={{ mt: 4 }}>
-          <Typography variant="h5">
-            At Geek Ink, we offer a range of services tailored to meet the needs
-            of aspiring tech professionals in Northern Nigeria.
-          </Typography>
-          <Stack
-            direction={{ xs: "column", sm: "row" }}
-            spacing={2}
-            justifyContent="center"
-            alignItems="center"
-          >
-            <ServiceItem
-              icon={<i className="fas fa-cogs fa-3x"></i>}
-              title="Tech Education"
-              description="Practical, project-based courses designed to equip you with real-world skills."
-            />
-            <ServiceItem
-              icon={<i className="fas fa-users fa-3x"></i>}
-              title="Mentorship"
-              description="Expert mentorship from industry leaders passionate about guiding the next generation of tech heroes."
-            />
-            <ServiceItem
-              icon={<i className="fas fa-code-branch fa-3x"></i>}
-              title="Open Source Collaboration"
-              description="Contribute to real-world projects and build your portfolio through open source collaboration."
-            />
-          </Stack>
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            onClick={scrollToCourses}
-            variant="contained"
-            color="success"
-            sx={{ mt: 4, backgroundColor: "#388e3c", color: "#fff" }}
-          >
-            Explore Courses
-          </motion.button>
-        </Stack>
+
+        <Grid container spacing={4}>
+          <Grid item xs={12} md={4}>
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              <SectionBox>
+                <Typography
+                  variant="h5"
+                  component="h3"
+                  gutterBottom
+                  color={green[700]}
+                >
+                  Tech Education
+                </Typography>
+                <Typography variant="body1" component="p" color="black">
+                  Our Tech Education program, with a technopreneurship mindset,
+                  offers a comprehensive, hands-on learning experience designed
+                  to equip you with essential skills for the tech industry. Join
+                  us to gain practical skills and knowledge
+                </Typography>
+                <Button
+                  variant="contained"
+                  color="primary"
+                  component={Link}
+                  to="/docs/intro"
+                  sx={{ mt: 2, backgroundColor: green[500] }}
+                >
+                  Learn More
+                </Button>
+              </SectionBox>
+            </motion.div>
+          </Grid>
+
+          <Grid item xs={12} md={4}>
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              <SectionBox>
+                <Typography
+                  variant="h5"
+                  component="h3"
+                  gutterBottom
+                  color={green[700]}
+                >
+                  IT Consultancy Services
+                </Typography>
+                <Typography variant="body1" component="p" color="black">
+                  Our IT Consultancy services provide expert advice and
+                  solutions to help businesses leverage technology effectively.
+                  Partner with us for customized IT strategies.
+                </Typography>
+                <Button
+                  variant="contained"
+                  color="primary"
+                  component={Link}
+                  to="/consultancy"
+                  sx={{ mt: 2, backgroundColor: green[500] }}
+                >
+                  Get Started
+                </Button>
+              </SectionBox>
+            </motion.div>
+          </Grid>
+
+          <Grid item xs={12} md={4}>
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+            >
+              <SectionBox>
+                <Typography
+                  variant="h5"
+                  component="h3"
+                  gutterBottom
+                  color={green[700]}
+                >
+                  Technical Research Assistance
+                </Typography>
+                <Typography variant="body1" component="p" color="black">
+                  Our Technical Research Assistance services support academic
+                  and industry research projects with advanced technical
+                  expertise and resources. Collaborate with us to achieve your
+                  research goals.
+                </Typography>
+                <Button
+                  variant="contained"
+                  color="primary"
+                  component={Link}
+                  to="/research"
+                  sx={{ mt: 2, backgroundColor: green[500] }}
+                >
+                  Contact Us
+                </Button>
+              </SectionBox>
+            </motion.div>
+          </Grid>
+        </Grid>
       </Container>
     </Box>
   );
-}
+};
 
-function ServiceItem({ icon, title, description }) {
-  return (
-    <Box
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        textAlign: "center",
-        p: 2,
-        borderRadius: 1,
-        boxShadow: 1,
-        bgcolor: "background.paper",
-      }}
-    >
-      <Box sx={{ mb: 2 }}>{icon}</Box>
-      <Typography variant="h6" sx={{ color: "#1b5e20" }}>
-        {title}
-      </Typography>
-      <Typography variant="body1">{description}</Typography>
-    </Box>
-  );
-}
+export default Services;
