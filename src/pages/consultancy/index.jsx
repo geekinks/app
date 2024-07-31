@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "@theme/Layout";
+import Works from "../../components/Works";
 import { Container, Box, Typography, Button } from "@mui/material";
 import { styled } from "@mui/system";
 import { green, blue } from "@mui/material/colors";
@@ -87,7 +88,9 @@ function Service() {
       description="Description will go into a meta tag in <head />"
     >
       <Hero />
-      <main></main>
+      <main>
+        <Works />
+      </main>
     </Layout>
   );
 }
