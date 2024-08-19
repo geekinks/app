@@ -8,8 +8,9 @@ export default function Home() {
     <Layout
       title={`home`}
       description="Geek Ink: Technopreneurship LinkedInuted of Social Innovators.
-      <meta name="google-adsense-account" content="ca-pub-7276960891212204">
-      <head />"
+      <head 
+      <meta name="google-adsense-account" content="ca-pub-7276960891212204">      
+      />"
     >
       <Hero />
       <main>
