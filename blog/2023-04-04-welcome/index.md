@@ -35,6 +35,6 @@ Ready to embark on your software engineering journey ? GeekInk is here to guide 
 
 The demand for skilled software engineers is skyrocketing, with numerous opportunities across various industries. Whether you're passionate about building mobile apps, designing cutting-edge software, or creating innovative solutions, software engineering offers a rewarding and impactful career path.
 
-Take the first step towards your dream tech career today! Explore [GeekInk Software Engineering Courses](link to your course page) and unlock your potential.
+Take the first step towards your dream tech career today! Explore [GeekInk Software Engineering Courses](https://forms.gle/MPk5Kuh6E9dxdqYy6) and unlock your potential.
 
 Start your journey with GeekInk and become a part of the exciting world of software engineering!
